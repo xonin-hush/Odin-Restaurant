@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./Roboto/Roboto-Black.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+body {
+    font-family: 'MyFontS';
+    background-color: #1f2937;
+    margin: 0%;
+}
+
+html {
+    margin: 0%;
+    height: 100%;
+}
+
+header {
+    background-color: orange;
+    padding: 2rem;
+    display: flex;
+    justify-content: end;
+}
+header{
+    gap: 1rem;
+}
+nav{
+    display: flex;
+    gap:0.6rem;
+}
+header button {
+    background-color: #02BBAB;
+    border: 0px solid white;
+    border-radius: 14px;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 15px;
+}
