@@ -6,35 +6,39 @@ import fifthImg from "./images/pepsi.png"
 import sixthImg from "./images/fanta.png"
 import seventhImg from "./images/water.png"
 import eighthImg from "./images/cake.png"
-let img1 = ""
 const cardContainer = document.createElement("div")
 export function loadMenu() {
-    const content = document.querySelector("#content")
-    content.innerHTML = ""
-    const cardTitle = document.createElement("div")
-    const cardDescription = document.createElement("div")
-    cardTitle.textContent = "burger"
-    cardDescription.textContent = "this burger is so good"
-    createCards()
+    if (cardContainer.innerHTML != "") {
+        cardContainer.innerHTML = ""
+    }
+    if (cardContainer.innerHTML == "") {
+        const content = document.querySelector("#content")
+        content.innerHTML = ""
+        const cardTitle = document.createElement("div")
+        const cardDescription = document.createElement("div")
+        cardTitle.textContent = "burger"
+        cardDescription.textContent = "this burger is so good"
+        createCards()
+    }
 }
 function createCards() {
     const cards = [
-        { title: "Cheese Burger", price: "9.99", description: "Made it myself,bit chewy but good",image:firstImg },
-        { title: "Taboula", price: "Priceless", description: "On God the best chicken wings in the galaxy",image:secondImg },
-        { title: "Pizza", price: "15.90", description: "lorem and something",image:thirdImg },
-        { title: "Salad", price: "10.00", description: "lorem and something",image:fourthImg },
-        { title: "Pepsi", price: "3.00", description: "lorem and something",image:fifthImg },
-        { title: "Fanta", price: "3.00", description: "lorem and something",image:sixthImg },
-        { title: "water", price: "5.00", description: "lorem and something",image:seventhImg },
-        { title: "Cake", price: "5.00", description: "lorem and something",image:eighthImg },
+        { title: "Cheese Burger", price: "9.99", description: "Made it myself,bit chewy but good", image: firstImg },
+        { title: "Taboula", price: "Priceless", description: "On God the best chicken wings in the galaxy", image: secondImg },
+        { title: "Pizza", price: "15.90", description: "lorem and something", image: thirdImg },
+        { title: "Salad", price: "10.00", description: "lorem and something", image: fourthImg },
+        { title: "Pepsi", price: "3.00", description: "lorem and something", image: fifthImg },
+        { title: "Fanta", price: "3.00", description: "lorem and something", image: sixthImg },
+        { title: "water", price: "5.00", description: "lorem and something", image: seventhImg },
+        { title: "Cake", price: "5.00", description: "lorem and something", image: eighthImg },
     ];
     for (let i in cards) {
         console.log(i)
-        createCard(cards[i].title, cards[i].price, cards[i].description,cards[i].image, i)
+        createCard(cards[i].title, cards[i].price, cards[i].description, cards[i].image, i)
     }
 
 }
-function createCard(title, price, description, image,i) {
+function createCard(title, price, description, image, i) {
     cardContainer.classList.add("card-container")
     const card = document.createElement("div")
     if (i % 2 == 0) {
