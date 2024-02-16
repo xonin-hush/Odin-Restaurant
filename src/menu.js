@@ -23,8 +23,8 @@ export function loadMenu() {
 }
 function createCards() {
     const cards = [
-        { title: "Cheese Burger", price: "9.99", description: "Made it myself,bit chewy but good", image: firstImg },
-        { title: "Taboula", price: "Priceless", description: "On God the best chicken wings in the galaxy", image: secondImg },
+        { title: "Stake", price: "9.99", description: "Made it myself,bit chewy but good", image: firstImg },
+        { title: "Chicken Wings", price: "Priceless", description: "On God the best chicken wings in the galaxy", image: secondImg },
         { title: "Pizza", price: "15.90", description: "lorem and something", image: thirdImg },
         { title: "Salad", price: "10.00", description: "lorem and something", image: fourthImg },
         { title: "Pepsi", price: "3.00", description: "lorem and something", image: fifthImg },
