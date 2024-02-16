@@ -7,7 +7,6 @@ const menuButton = document.querySelector("#button-menu")
 const aboutButton = document.querySelector("#button-about")
 loadHome()
 homeButton.addEventListener('click', () => {
-
     loadHome()
 });
 menuButton.addEventListener('click', () => {
